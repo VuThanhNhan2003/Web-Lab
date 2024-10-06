@@ -1,0 +1,248 @@
+*{
+  font-family: 'Verdana', sans-serif;
+}
+html, body{
+  height: 100%;
+}
+body{
+
+  background: linear-gradient(to bottom, #7927b2, #fb3182);
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+/*    position: absolute;*/
+    top: 10px;
+    left: 10px;
+    display: inline-block;
+    width: 100px;   
+    height: 100px
+    
+}
+
+h1 {
+    font-size: 40px;
+    color: brown;
+}
+
+
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.link { color: blue; } /* CSS link color (red) */
+.link:hover { color: red; } /* CSS link hover (green) */
+
+/*footer{
+    display: flex; 
+    justify-content: center;
+}*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightblue;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 20px 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed; /* phần scroll */
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 1000; 
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 90%;
+    max-width: 1480px;
+    margin: 0 auto;
+
+}
+
+.logo img {
+    width: 130px;
+    height: 58px;
+}
+
+.nav-list ul {
+    list-style: none; 
+    display: flex; 
+    gap: 40px; 
+}
+
+.nav-list a {
+    text-decoration: none; 
+    color: #333; 
+    font-weight: bold; 
+}
+
+.nav-list a:hover {
+    color: #007BFF; 
+    text-decoration: underline;
+}
+
+
+/*Phần main*/
+main {
+    padding-top: 105px; 
+}
+
+/*Footer*/
+footer {
+    background-color: #f9f9f9;
+}
+
+footer .container {
+    max-width: 1480px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 60px;
+    padding-bottom: 60px;
+    padding-right: 80px;
+    padding-top: 60px;
+}
+
+/*Phần logo và icons*/
+footer img {
+    width: 130px;
+    height: 58px;
+    margin-bottom: 10px;
+}
+
+footer .social-icons {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.social-icons p {
+    color: var(--Text, #181A18);
+
+    /* Desktop/Text regular */
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+}
+
+/*Phần link*/
+.link-section {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.link-section div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.link-section h4 {
+    margin-bottom: 16px;
+    color: var(--Text, #181A18);
+    /* Desktop/Subtitle bold */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+}
+
+.link-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.link-section li {
+    margin-bottom: 16px;
+}
+
+.link-section a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link-section a:hover {
+    text-decoration: underline;
+}
+
+/*Phần email và button*/
+.stayup-section{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.stayup-section input[type="email"] {
+    display: flex;
+    padding: 12px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 12px;
+    background: var(--BG, #F2F0F2);
+    
+}
+
+.stayup-section button {
+    display: flex;
+    padding: 12px 40px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 40px;
+    background: var(--Green, #064749);
+    color: var(--White, #FFF);
+
+    /* Desktop/Subtitle bold */
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+}
+
+.stayup-section h4{
+    color: var(--Text, #181A18);
+    /* Desktop/Subtitle bold */
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+}
+
+.stayup-section p{
+    color: var(--Text, #181A18);
+    /* Desktop/Subtitle */
+    
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+}

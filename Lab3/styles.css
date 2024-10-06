@@ -1,0 +1,7 @@
+.navbar navbar-expand-sm navbar-dark bg-dark {
+    
+    padding: 20px 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+    background-color: #A8D5BA;
+}

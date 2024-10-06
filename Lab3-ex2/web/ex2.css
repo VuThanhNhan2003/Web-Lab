@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 10px;
+    font-family: Lato, sans-serif;
+    line-height: 1.6;
+    background-color: #F5F5DC; /* Màu be */
+    color: #333; /* Màu chữ tối để dễ đọc */
+}
+
+.news-container {
+    width: 90%;
+    max-width: 90%;
+    padding: 60px 80px;
+    gap: 60px;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center; 
+    
+}
+
+.news {
+    width: 70%;
+    gap: 80px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    margin-bottom: 80px;
+    border-bottom:#333;
+    border-top: #333;
+    padding-bottom: 20px; /* Khoảng cách giữa nội dung và đường viền */
+    border-bottom: 2px solid #ccc;
+}
+
+img {
+    
+    width: 240px;
+    height: 144px;
+}
+
+h2 {
+    color: blue;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    
+}
+
+p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+p::before{
+    content: '•';
+    margin-right: 10px;
+}

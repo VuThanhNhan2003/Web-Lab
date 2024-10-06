@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Platform</title>
+    <link rel="icon" href= "https://upload.wikimedia.org/wikipedia/vi/2/29/Logo-HCMIU.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- Logo và Navigation Bar -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/vi/2/29/Logo-HCMIU.svg" alt="Logo">
+            </div>
+            <nav class="nav-list">
+                <ul>
+                    <li><a href="school.html">School</a></li>
+                    <li><a href="personal_Info.html">Info</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+            <!-- Form và image -->
+    <div class="container2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy2LkeifJkPYEY7vlPh9b0tm_JRTTN_tfIyQ&s" alt="Background Image" class="background-image">
+
+        <!-- Form Container -->
+        <div class="form-container" >
+
+            <!-- Title -->
+            <div class="section-1">
+                <h1>Earn more from your property, do less</h1>
+                <p>Find out if your property meets our criteria</p>
+            </div>
+
+            <!-- Input details in here -->
+            <div>
+                <input type="text" placeholder="Name *" required>
+                <input type="email" placeholder="Email *" required>
+                <input type="tel" placeholder="Phone number *" required>
+
+                <div class="property-section">
+                    <p>Property details</p>
+                    <div class="property-details">
+                        <select required>
+                            <option value="" disabled selected>City *</option>
+                            <option value="city1">Ho Chi Minh city</option>
+                            <option value="city2">Ha Noi</option>
+                        </select>
+                        <select required>
+                            <option value="" disabled selected>Area *</option>
+                            <option value="area1">Thu Duc</option>
+                            <option value="area2">Tan Binh</option>
+                        </select>
+                    </div>
+
+                    <select required>
+                        <option value="" disabled selected>year *</option>
+                        <option value="1">1 Bedroom</option>
+                        <option value="2">2 Bedrooms</option>
+                        <option value="3">3 Bedrooms</option>
+                    </select>
+                </div>
+            </div>
+      
+            <!-- Submit button -->
+            <form action="thank_you.html" method="get">
+                <button type="submit">Submit</button> 
+            </form>
+        </div>
+    
+    </div>
+
+    <!-- Information Section -->
+    <div class="main-container">
+        <h1>Some information: </h1>
+        <p>Trường Đại học Quốc tế là đại học quốc tế đầu tiên của Việt Nam và là đại học công lập đa ngành, đa lĩnh vực, thành viên ĐHQG-HCM.</p>
+
+        <div class="features">
+            <div class="feature-item">
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+  <path d="M31.666 5H11.666C10.3399 5 9.06816 5.52678 8.13048 6.46447C7.1928 7.40215 6.66602 8.67392 6.66602 10V30C6.66602 31.3261 7.1928 32.5979 8.13048 33.5355C9.06816 34.4732 10.3399 35 11.666 35H31.666C32.108 35 32.532 34.8244 32.8445 34.5118C33.1571 34.1993 33.3327 33.7754 33.3327 33.3333V6.66667C33.3327 6.22464 33.1571 5.80072 32.8445 5.48816C32.532 5.17559 32.108 5 31.666 5ZM11.666 31.6667C11.224 31.6667 10.8001 31.4911 10.4875 31.1785C10.1749 30.866 9.99935 30.442 9.99935 30C9.99935 29.558 10.1749 29.134 10.4875 28.8215C10.8001 28.5089 11.224 28.3333 11.666 28.3333H29.9993V31.6667H11.666Z" fill="black"/>
+</svg></div>
+                <h3>History</h3>
+                <p>ngày 5/12/2003 Thủ tướng đã chính thức ký quyết định thành lập Trường Đại học Quốc tế.</p>
+            </div>
+            <div class="feature-item">
+                <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+  <path d="M31.666 34.583L27.816 19.583C29.2394 17.812 30.0103 15.6052 29.9993 13.333C29.9993 10.6808 28.9458 8.1373 27.0704 6.26194C25.195 4.38658 22.6515 3.33301 19.9993 3.33301C17.3472 3.33301 14.8036 4.38658 12.9283 6.26194C11.0529 8.1373 9.99933 10.6808 9.99933 13.333C9.99476 15.6227 10.784 17.8432 12.2327 19.6163L8.33266 34.583C8.24971 34.9029 8.26372 35.2402 8.37292 35.5521C8.48213 35.864 8.68159 36.1364 8.94596 36.3347C9.21034 36.533 9.52769 36.6482 9.8577 36.6657C10.1877 36.6832 10.5155 36.6022 10.7993 36.433L19.6827 31.2163L29.1493 36.4497C29.4051 36.604 29.7008 36.6794 29.9993 36.6663C30.2581 36.6746 30.5153 36.6224 30.7504 36.514C30.9855 36.4056 31.1922 36.2439 31.3539 36.0417C31.5157 35.8395 31.6281 35.6024 31.6823 35.3492C31.7364 35.096 31.7309 34.8337 31.666 34.583ZM19.9993 6.66634C21.3179 6.66634 22.6068 7.05733 23.7031 7.78988C24.7995 8.52242 25.6539 9.56361 26.1585 10.7818C26.6631 12 26.7951 13.3404 26.5379 14.6336C26.2807 15.9268 25.6457 17.1147 24.7134 18.0471C23.781 18.9794 22.5931 19.6143 21.2999 19.8716C20.0067 20.1288 18.6663 19.9968 17.4481 19.4922C16.2299 18.9876 15.1887 18.1331 14.4562 17.0368C13.7237 15.9405 13.3327 14.6515 13.3327 13.333C13.3327 11.5649 14.035 9.8692 15.2853 8.61896C16.5355 7.36872 18.2312 6.66634 19.9993 6.66634Z" fill="#181A18"/>
+</svg>️</div>
+                <h3>Achievements</h3>
+                <p>ABET, ASIIN, AUN-QA, ACBSP.</p>
+            </div>
+            
+        </div>
+    </div>
+    <!-- HTML -->
+    </main>
+
+    
+    
+    <footer>
+        <div class="container">
+            <!-- Logo and Contact Info -->
+            <div>
+                <img src="image/Logo.png" alt="Flex Living Logo">
+                <p>Contact number: 02033074477</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/iuvnu.hcmc/" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M15.1508 8.39994C14.3843 8.39731 13.6249 8.54583 12.9159 8.83701C12.2069 9.12819 11.5623 9.55632 11.019 10.0969C10.4756 10.6375 10.0442 11.2799 9.74934 11.9873C9.45452 12.6948 9.30209 13.4535 9.30078 14.2199V20.0999C9.30078 20.3386 9.3956 20.5676 9.56439 20.7363C9.73317 20.9051 9.96209 20.9999 10.2008 20.9999H12.3008C12.5395 20.9999 12.7684 20.9051 12.9372 20.7363C13.106 20.5676 13.2008 20.3386 13.2008 20.0999V14.2199C13.2006 13.9473 13.2578 13.6778 13.3688 13.4288C13.4798 13.1798 13.642 12.957 13.8448 12.7749C14.0477 12.5928 14.2867 12.4555 14.5461 12.3719C14.8056 12.2884 15.0798 12.2604 15.3508 12.2899C15.8368 12.3512 16.2834 12.5886 16.606 12.9572C16.9286 13.3259 17.1046 13.8001 17.1008 14.2899V20.0999C17.1008 20.3386 17.1956 20.5676 17.3644 20.7363C17.5332 20.9051 17.7621 20.9999 18.0008 20.9999H20.1008C20.3395 20.9999 20.5684 20.9051 20.7372 20.7363C20.906 20.5676 21.0008 20.3386 21.0008 20.0999V14.2199C20.9995 13.4535 20.847 12.6948 20.5522 11.9873C20.2574 11.2799 19.826 10.6375 19.2826 10.0969C18.7393 9.55632 18.0946 9.12819 17.3857 8.83701C16.6767 8.54583 15.9172 8.39731 15.1508 8.39994Z" fill="#064749"/>
+      <path d="M6.6 9.2998H3.9C3.40294 9.2998 3 9.70275 3 10.1998V20.0998C3 20.5969 3.40294 20.9998 3.9 20.9998H6.6C7.09706 20.9998 7.5 20.5969 7.5 20.0998V10.1998C7.5 9.70275 7.09706 9.2998 6.6 9.2998Z" fill="#064749"/>
+      <path d="M5.25 7.5C6.49264 7.5 7.5 6.49264 7.5 5.25C7.5 4.00736 6.49264 3 5.25 3C4.00736 3 3 4.00736 3 5.25C3 6.49264 4.00736 7.5 5.25 7.5Z" fill="#064749"/>
+      </svg></a>
+                    <a href="https://www.facebook.com/IUVNUHCMC" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M17 3.50005C17 3.36745 16.9473 3.24027 16.8536 3.1465C16.7598 3.05273 16.6326 3.00005 16.5 3.00005H14C12.7411 2.93734 11.5086 3.37544 10.5717 4.21863C9.63485 5.06182 9.06978 6.24155 9 7.50005V10.2001H6.5C6.36739 10.2001 6.24021 10.2527 6.14645 10.3465C6.05268 10.4403 6 10.5674 6 10.7001V13.3001C6 13.4327 6.05268 13.5598 6.14645 13.6536C6.24021 13.7474 6.36739 13.8001 6.5 13.8001H9V20.5001C9 20.6327 9.05268 20.7598 9.14645 20.8536C9.24021 20.9474 9.36739 21.0001 9.5 21.0001H12.5C12.6326 21.0001 12.7598 20.9474 12.8536 20.8536C12.9473 20.7598 13 20.6327 13 20.5001V13.8001H15.62C15.7312 13.8017 15.8397 13.7661 15.9285 13.6991C16.0172 13.6321 16.0811 13.5374 16.11 13.4301L16.83 10.8301C16.8499 10.7562 16.8526 10.6787 16.8378 10.6036C16.8231 10.5286 16.7913 10.4579 16.7449 10.397C16.6985 10.3362 16.6388 10.2868 16.5704 10.2526C16.5019 10.2185 16.4265 10.2005 16.35 10.2001H13V7.50005C13.0249 7.25253 13.1411 7.02317 13.326 6.85675C13.5109 6.69033 13.7512 6.59881 14 6.60005H16.5C16.6326 6.60005 16.7598 6.54737 16.8536 6.45361C16.9473 6.35984 17 6.23266 17 6.10005V3.50005Z" fill="#064749"/>
+      </svg></a>
+                    <a href="https://www.x.com" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M8.08029 19.9998C9.55898 20.0493 11.0326 19.8018 12.414 19.2721C13.7955 18.7424 15.0567 17.9411 16.1232 16.9156C17.1897 15.8901 18.0398 14.6613 18.6233 13.3017C19.2067 11.9421 19.5118 10.4793 19.5203 8.9998C20.1979 8.16121 20.7011 7.19563 21.0003 6.1598C21.0226 6.07796 21.0208 5.99141 20.9951 5.91057C20.9694 5.82974 20.9208 5.75806 20.8553 5.70417C20.7898 5.65027 20.7101 5.61647 20.6258 5.60683C20.5416 5.59718 20.4563 5.6121 20.3803 5.6498C20.0258 5.82045 19.6266 5.87558 19.2391 5.80741C18.8516 5.73923 18.4953 5.5512 18.2203 5.2698C17.8692 4.88538 17.4446 4.57533 16.9715 4.35803C16.4985 4.14072 15.9866 4.02059 15.4662 4.00473C14.9459 3.98888 14.4276 4.07763 13.9422 4.26574C13.4568 4.45384 13.0141 4.73746 12.6403 5.0998C12.1285 5.59546 11.7536 6.21509 11.5521 6.89847C11.3506 7.58186 11.3293 8.30575 11.4903 8.9998C8.14029 9.1998 5.84029 7.6098 4.00029 5.4298C3.94501 5.3672 3.8727 5.32205 3.79219 5.29987C3.71168 5.27769 3.62645 5.27943 3.54691 5.30488C3.46737 5.33033 3.39697 5.37839 3.34429 5.4432C3.29162 5.508 3.25895 5.58674 3.25029 5.6698C2.89976 7.61422 3.15261 9.61935 3.9749 11.4159C4.79719 13.2124 6.14953 14.7143 7.85029 15.7198C6.70992 17.0276 5.10849 17.8445 3.38029 17.9998C3.2877 18.0152 3.20223 18.0591 3.13584 18.1254C3.06945 18.1917 3.02546 18.2772 3.01003 18.3698C2.9946 18.4623 3.0085 18.5574 3.04979 18.6417C3.09108 18.726 3.15768 18.7952 3.24029 18.8398C4.74381 19.5912 6.39952 19.988 8.08029 19.9998Z" fill="#064749"/>
+      </svg></a>
+                </div>
+                <p>© 2021 Flex Living</p>
+            </div>
+
+            <div class="link-section">
+                            <!-- Company Links -->
+                <div>
+                    <h4>School</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Lecturer</a></li>
+                    </ul>
+                </div>
+
+                <!-- Guests Links -->
+                <div>
+                    <h4>Guests</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+                </div>
+
+                <!-- Privacy Links -->
+                <div>
+                    <h4>Privacy</h4>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Subscribe -->
+            <div class ="stayup-section">
+                <h4>Stay up to date</h4>
+                <p>Contact with us</p>
+                <form action="thank_you.html" method="get">
+                    <input type="email" placeholder="Email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+</body>
+</html>
+
