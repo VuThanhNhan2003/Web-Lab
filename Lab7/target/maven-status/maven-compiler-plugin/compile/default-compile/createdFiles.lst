@@ -1,0 +1,7 @@
+com\mycompany\model\Product.class
+com\mycompany\model\ShoppingServlet.class
+com\mycompany\lab7\resources\JakartaEE8Resource.class
+com\mycompany\lab7\JakartaRestConfiguration.class
+com\mycompany\model\ProductDB.class
+com\mycompany\model\AccountBean.class
+com\mycompany\model\AccountBeanDB.class

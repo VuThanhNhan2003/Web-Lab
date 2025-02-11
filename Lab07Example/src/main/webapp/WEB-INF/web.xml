@@ -1,0 +1,23 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                             http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <!-- Taglib declaration for JSTL -->
+    <taglib>
+        <taglib-uri>http://java.sun.com/jsp/jstl/core</taglib-uri>
+        <taglib-location>/WEB-INF/tlds/c.tld</taglib-location>
+    </taglib>
+
+    <servlet>
+        <servlet-name>emailListServlet</servlet-name>
+        <servlet-class>com.example.EmailListServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>emailListServlet</servlet-name>
+        <url-pattern>/emailList</url-pattern>
+    </servlet-mapping>
+
+</web-app>

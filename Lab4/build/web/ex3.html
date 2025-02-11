@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Clock</title>
+    <link rel="stylesheet" href="ex3.css">
+    
+    <script>
+        var timerID = null;
+        var timerRunning = false;
+
+        function stopclock() {
+            if (timerRunning)
+                clearInterval(timerID);
+            timerRunning = false;
+        }
+
+        function startclock() {
+            stopclock();
+            timerID = setInterval(showtime, 1000);
+            timerRunning = true;
+        }
+
+        function showtime() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+            var day = now.getDate();
+            var month = now.getMonth() + 1; 
+            var year = now.getFullYear();
+            var timeValue = (hours > 12 ? hours - 12 : hours) || 12; 
+            timeValue += (minutes < 10 ? ":0" : ":") + minutes;
+            timeValue += (seconds < 10 ? ":0" : ":") + seconds;
+            timeValue += (hours >= 12) ? " P.M." : " A.M.";
+
+            var dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            var dateValue = dayNames[now.getDay()] + ", " + day + "/" + month + "/" + year;
+
+            // Update the clock display
+            document.getElementById('timeDisplay').innerText = timeValue;
+            document.getElementById('dateDisplay').innerText = dateValue;
+        }
+    </script>
+</head>
+<body onload="startclock()">
+    <div class="clock-container">
+        <h1>My Clock</h1>
+        <div class="time" id="timeDisplay"></div>
+        <div class="date" id="dateDisplay"></div>
+    </div>
+</body>
+</html>

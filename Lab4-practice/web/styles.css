@@ -1,0 +1,19 @@
+.form-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 80%; 
+    margin: auto; 
+}
+
+.btn-custom {
+    width: 120px; 
+    margin-right: 10px;
+}
+
+.error-list {
+    color: red; /* Change text color to red */
+    margin-bottom: 15px; /* Add some margin at the bottom */
+    
+    background-color: #f8d7da;
+}

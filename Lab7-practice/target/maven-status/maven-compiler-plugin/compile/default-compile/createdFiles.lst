@@ -1,0 +1,5 @@
+model\EmailListServlet.class
+com\mycompany\lab7\practice\resources\JakartaEE8Resource.class
+model\UserDB.class
+com\mycompany\lab7\practice\JakartaRestConfiguration.class
+model\User.class

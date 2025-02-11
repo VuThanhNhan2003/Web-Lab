@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="ex2.css">
+</head>
+<body>
+    <div id="container">
+        <div id="timer-section">
+            <button id="startBtn">Start counting down 1:00 [mm:ss]</button>
+            <div id="timeDisplay"></div>
+        </div>
+
+        <div id="question-section" style="display: none;">
+            <div id="time-remaining">The remaining time: <span id="remainingTime"></span> [mm:ss]</div>
+            <p><strong>These are test questions.</strong></p>
+            <p>Question 1: How many people are there in your class? <input type="number" /></p>
+            <p>Question 2: How do you feel now?</p>
+            <label><input type="radio" name="feel" value="good" /> Good</label>
+            <label><input type="radio" name="feel" value="bad" /> Bad</label>
+        </div>
+
+        <div id="timeout-section" style="display: none;">
+            <h3>Time is up!!!</h3>
+            <button>Submit your answers</button>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            let timerDisplay = document.getElementById('timeDisplay');
+            let remainingTimeDisplay = document.getElementById('remainingTime');
+            let questionSection = document.getElementById('question-section');
+            let timeoutSection = document.getElementById('timeout-section');
+            let startButton = document.getElementById('startBtn');
+            let countdown;
+
+            startButton.addEventListener('click', function() {
+                startButton.style.display = 'none';
+                timerDisplay.style.display = 'block';
+                questionSection.style.display = 'block';
+                
+                let time = 60; // 60 seconds
+                timerDisplay.innerText = formatTime(time);
+
+                countdown = setInterval(function() {
+                    time--;
+                    timerDisplay.innerText = formatTime(time);
+                    remainingTimeDisplay.innerText = formatTime(time);
+
+                    if (time <= 0) {
+                        clearInterval(countdown);
+                        questionSection.style.display = 'none';
+                        timerDisplay.style.display = 'none';
+                        timeoutSection.style.display = 'block';
+                    }
+                }, 1000);
+            });
+
+            function formatTime(seconds) {
+                let mins = Math.floor(seconds / 60);
+                let secs = seconds % 60;
+                return mins + ":" + (secs < 10 ? "0" : "") + secs;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="ex5.css">
+</head>
+<body>
+    <div class="task-tracker">
+        <h1>Task Tracker</h1>
+        <input type="text" id="new-task-input" placeholder="Start writing and press enter to create task">
+        <button id="add-task-btn">➔</button>
+        <ul id="task-list"></ul>
+    </div>
+
+    <script>
+        document.getElementById("add-task-btn").addEventListener("click", addTask);
+        document.getElementById("new-task-input").addEventListener("keypress", function (e) {
+            if (e.key === 'Enter') {
+                addTask();
+            }
+        });
+
+        function addTask() {
+            const taskInput = document.getElementById("new-task-input");
+            const taskText = taskInput.value.trim();
+            
+            if (taskText !== "") {
+                const taskList = document.getElementById("task-list");
+                const li = document.createElement("li");
+                li.className = "task-item";
+                
+                const span = document.createElement("span");
+                span.textContent = taskText;
+                
+                const checkbox = document.createElement("input");
+                checkbox.type = "checkbox";
+                checkbox.addEventListener("change", function () {
+                    toggleComplete(li);
+                });
+
+                const deleteButton = document.createElement("button");
+                deleteButton.innerHTML = "🗑️";
+                deleteButton.addEventListener("click", function () {
+                    taskList.removeChild(li);
+                });
+                
+                li.appendChild(checkbox);
+                li.appendChild(span);
+                li.appendChild(deleteButton);
+                taskList.appendChild(li);
+                
+                taskInput.value = ""; // Clear the input field
+            }
+        }
+
+        function toggleComplete(taskItem) {
+            if (taskItem.classList.contains("completed")) {
+                taskItem.classList.remove("completed");
+                taskItem.parentNode.prepend(taskItem); // Move back to the top
+            } else {
+                taskItem.classList.add("completed");
+                taskItem.parentNode.appendChild(taskItem); // Move to the bottom
+            }
+        }
+    </script>
+</body>
+</html>
